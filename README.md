@@ -1,2 +1,6 @@
 portfolio
+<<<<<<< HEAD
 =========
+=======
+=========
+>>>>>>> origin/master
