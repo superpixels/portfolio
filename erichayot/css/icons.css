@@ -1,0 +1,212 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.svg#icomoon') format('svg'),
+		url('../fonts/icomoon/icomoon.woff') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'icomoon';
+	font-style: normal;
+	speak: none;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-tumblr:before {
+	content: "\21";
+}
+.icon-tumblr-2:before {
+	content: "\22";
+}
+.icon-twitter:before {
+	content: "\23";
+}
+.icon-twitter-2:before {
+	content: "\24";
+}
+.icon-twitter-3:before {
+	content: "\25";
+}
+.icon-facebook:before {
+	content: "\26";
+}
+.icon-facebook-2:before {
+	content: "\27";
+}
+.icon-facebook-3:before {
+	content: "\28";
+}
+.icon-facebook-4:before {
+	content: "\29";
+}
+.icon-google-plus:before {
+	content: "\2a";
+}
+.icon-google-plus-2:before {
+	content: "\2b";
+}
+.icon-gplus:before {
+	content: "\2c";
+}
+.icon-google-plus-3:before {
+	content: "\2d";
+}
+.icon-home:before {
+	content: "\2e";
+}
+.icon-newspaper:before {
+	content: "\2f";
+}
+.icon-mail:before {
+	content: "\30";
+}
+.icon-comments:before {
+	content: "\31";
+}
+.icon-link:before {
+	content: "\32";
+}
+.icon-bookmark:before {
+	content: "\33";
+}
+.icon-bookmark-2:before {
+	content: "\34";
+}
+.icon-arrow-up:before {
+	content: "\35";
+}
+.icon-arrow-right:before {
+	content: "\36";
+}
+.icon-arrow-down:before {
+	content: "\37";
+}
+.icon-arrow-left:before {
+	content: "\38";
+}
+.icon-arrow-up-left:before {
+	content: "\39";
+}
+.icon-arrow-up-2:before {
+	content: "\3a";
+}
+.icon-arrow-up-right:before {
+	content: "\3b";
+}
+.icon-arrow-right-2:before {
+	content: "\3c";
+}
+.icon-arrow-down-right:before {
+	content: "\3d";
+}
+.icon-arrow-down-2:before {
+	content: "\3e";
+}
+.icon-arrow-up-right-2:before {
+	content: "\3f";
+}
+.icon-arrow-left-2:before {
+	content: "\40";
+}
+.icon-arrow-down-3:before {
+	content: "\41";
+}
+.icon-arrow-up-3:before {
+	content: "\42";
+}
+.icon-arrow-up-left-2:before {
+	content: "\43";
+}
+.icon-arrow-right-3:before {
+	content: "\44";
+}
+.icon-arrow-up-4:before {
+	content: "\45";
+}
+.icon-arrow-left-3:before {
+	content: "\46";
+}
+.icon-arrow-down-left:before {
+	content: "\47";
+}
+.icon-arrow-down-4:before {
+	content: "\48";
+}
+.icon-arrow-down-right-2:before {
+	content: "\49";
+}
+.icon-arrow-right-4:before {
+	content: "\4a";
+}
+.icon-arrow-up-right-3:before {
+	content: "\4b";
+}
+.icon-arrow-left-4:before {
+	content: "\4c";
+}
+.icon-arrow-down-left-2:before {
+	content: "\4d";
+}
+.icon-arrow-up-5:before {
+	content: "\4e";
+}
+.icon-arrow-up-left-3:before {
+	content: "\4f";
+}
+.icon-arrow-down-5:before {
+	content: "\50";
+}
+.icon-arrow-down-right-3:before {
+	content: "\51";
+}
+.icon-arrow-left-5:before {
+	content: "\52";
+}
+.icon-arrow-down-left-3:before {
+	content: "\53";
+}
+.icon-arrow-right-5:before {
+	content: "\54";
+}
+.icon-paragraph-left:before {
+	content: "\55";
+}
+.icon-mail-2:before {
+	content: "\56";
+}
+.icon-mail-3:before {
+	content: "\57";
+}
+.icon-feed:before {
+	content: "\58";
+}
+.icon-feed-2:before {
+	content: "\59";
+}
+.icon-feed-3:before {
+	content: "\5a";
+}
+.icon-amazon:before {
+	content: "\5b";
+}
+.icon-amazon-2:before {
+	content: "\5c";
+}
+
+.box1 {
+	display: block;
+}
