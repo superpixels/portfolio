@@ -8,6 +8,8 @@
     <meta name="author" content="Sally Northmore">
 
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -17,212 +19,232 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    
+    <!--
     <link rel="shortcut icon" href="ico/favicon.ico">
+    -->
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
 
-    <header id="site_header" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand span5" href="#">Sally Northmore</a>
-          <div class="span6 pull-right">
-            <ul id="site_nav" class="nav navbar">
-              <li><a href="#about">Me</a></li>
-              <li><a href="#development">Development</a></li>
-              <li><a href="#mztek">MzTEK</a></li>
-              <li><a href="#showstudio">SHOWstudio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
 
-    <div id="about" class="row hero-unit inverse">
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Sally Northmore</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="#about">Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#development">Development</a></li>
+                <li><a href="#mztek">MzTEK</a></li>
+                <li><a href="#showstudio">SHOWstudio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <div id="about" class="hero-unit inverse">
        <div class="container">
-        <div id="avatar" class="span4">
-          <img src="img/sally.jpg" class="img-circle span2 pull-right" alt="Sally Northmore">
+        <div class="row">
+          <div id="avatar" class="span2 offset1">
+            <img src="img/sally.jpg" class="img-circle" alt="Sally Northmore">
+          </div>
+          <div class="span8 offset1">
+            <p>I’m a web designer &amp; developer. I build robust, standards-compliant, accessible web sites with lean, progressive HTML5, JavaScript, and CSS. Currently, I develop the front of <a title="SHOWstudio" href="http://showstudio.com">SHOWstudio</a>. When I'm not coding sites, I geek out with <a title="MzTEK" href="#mztek">MzTEK</a></p> 
+          </div>       
         </div>
-        <div class="span6">
-          <p>I’m a web designer &amp; developer. I build robust, standards-compliant, accessible web sites with lean, progressive HTML5, JavaScript, and CSS. Currently, I develop the front of <a title="SHOWstudio" href="http://showstudio.com">SHOWstudio</a>. When I'm not coding sites, I geek out with <a title="MzTEK" href="#mztek">MzTEK</a></p> 
-        </div>       
       </div> 
     </div>
 
     <div id="development" class="container">
       <div class="row">
-        <h2>Projects</h2>
-        <ul class="thumbnails">
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="http://media.lanecrawford.com/ss13En.htm">
-              <img alt="Campaign site" src="img/screens/thumbnails/lane_crawford.jpg">
-              <div class="caption">
-                <h3>
-                  Lane Crawford S/S 13 Campaign
-                  <small>Competition Microsite</small>
+        <div class="span3">
+          <h2>Digital</h2>
+          <p>Web-based projects I've worked on, in various capacities.</p>
+        </div>
+        <div class="span9">
+          <ul class="thumbnails">
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="http://media.lanecrawford.com/ss13En.htm">
+                <img alt="Campaign site" src="img/screens/thumbnails/lane_crawford.jpg">
+                <div class="caption">
+                  <h3>
+                    Lane Crawford S/S 13 Campaign
+                    <small>Competition Microsite</small>
+                    <p class="description"></p>
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" href="http://erichayot.org/" title="erichayot.org" target="_blank">
+                <img alt="Eric Hayot&rsquo;s web site" src="img/screens/thumbnails/hayot.jpg">
+                <div class="caption">
+                  <h3>
+                    Eric Hayot
+                    <small>Responsive web site for academic, built with Bootstrap, LESS, and WordPress</small>
                   <p class="description"></p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" href="http://erichayot.org/" title="erichayot.org" target="_blank">
-              <img alt="Eric Hayot&rsquo;s web site" src="img/screens/thumbnails/hayot.jpg">
-              <div class="caption">
-                <h3>
-                  Eric Hayot
-                  <small>Responsive web site for academic, built with Bootstrap, LESS, and WordPress</small>
-                <p class="description"></p>
-                <p class="meta">
-                    <span class="box1">
-                      <span aria-hidden="true" class="icon-link"></span>
-                    </span>
-                    erichayot.org
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="http://showstudio.com/shop/">
-              <img alt="Mobile Shop app" src="img/screens/thumbnails/shop_01.jpg">
-              <div class="caption">
-                <h3>
-                  SHOWstudio Shop Mobile Site
-                  <small>QR triggered mobile web site for contemporary art gallery</small>
-                  <p class="description">Concept, design and development of QR-code triggered mobile site for the Shop contemporary gallery. The mobile Shop site provides an exhanced experience of the Shop, providing in-depth information about the artwork, and the ability to interact with the curators and artists.</p>
                   <p class="meta">
                       <span class="box1">
                         <span aria-hidden="true" class="icon-link"></span>
                       </span>
-                      SHOWstudio Shop
+                      erichayot.org
                   </p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="http://kategwynne.com/" title="Kate&rsquo;s website">
-              <img alt="Kate Gwynne web site" src="img/screens/thumbnails/gwynne_03.jpg">
-              <div class="caption">
-                <h3>
-                  Kate Gwynne
-                  <small>Portfolio site for writer</small>
-                <p class="description">Web design and development of WordPress theme for copywriter/journalist&rsquo;s portfolio site.</p>
-                <p class="meta">
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="http://showstudio.com/shop/">
+                <img alt="Mobile Shop app" src="img/screens/thumbnails/shop_01.jpg">
+                <div class="caption">
+                  <h3>
+                    SHOWstudio Shop Mobile Site
+                    <small>QR triggered mobile web site for contemporary art gallery</small>
+                    <p class="description">Concept, design and development of QR-code triggered mobile site for the Shop contemporary gallery. The mobile Shop site provides an exhanced experience of the Shop, providing in-depth information about the artwork, and the ability to interact with the curators and artists.</p>
+                    <p class="meta">
+                        <span class="box1">
+                          <span aria-hidden="true" class="icon-link"></span>
+                        </span>
+                        SHOWstudio Shop
+                    </p>
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="http://kategwynne.com/" title="Kate&rsquo;s website">
+                <img alt="Kate Gwynne web site" src="img/screens/thumbnails/gwynne_03.jpg">
+                <div class="caption">
+                  <h3>
+                    Kate Gwynne
+                    <small>Portfolio site for writer</small>
+                  <p class="description">Web design and development of WordPress theme for copywriter/journalist&rsquo;s portfolio site.</p>
+                  <p class="meta">
+                      <span class="box1">
+                        <span aria-hidden="true" class="icon-link"></span>
+                      </span>
+                      kategwynne.com
+                  </p>
+                </div>
+              </a>
+            </li>
+          
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="http://showstudio.com/" title="SHOWstudio website">
+                <img alt="SHOWstudio Home page" src="img/screens/thumbnails/showstudio_01.jpg" />
+                <div class="caption">
+                  <h3>
+                    SHOWstudio.com 
+                    <small>Full website redevelopment</small>
+                  <p class="description">As Front-end Developer, I developed the front-end of a complex fashion web site, which includes an archive of fashion film and live streaming projects, a fashion week Collections site, blog, Shop commerce and Gallery exhibitions sections. I also helped spearhead the project, initiating a process that included user research, feature design, UX and wireframes, design review and production (2011).</p>
+                  <p class="meta">
                     <span class="box1">
                       <span aria-hidden="true" class="icon-link"></span>
                     </span>
-                    kategwynne.com
-                </p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <ul class="thumbnails">
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="http://showstudio.com/" title="SHOWstudio website">
-              <img alt="SHOWstudio Home page" src="img/screens/thumbnails/showstudio_01.jpg" />
-              <div class="caption">
-                <h3>
-                  SHOWstudio.com 
-                  <small>Full website redevelopment</small>
-                <p class="description">As Front-end Developer, I developed the front-end of a complex fashion web site, which includes an archive of fashion film and live streaming projects, a fashion week Collections site, blog, Shop commerce and Gallery exhibitions sections. I also helped spearhead the project, initiating a process that included user research, feature design, UX and wireframes, design review and production (2011).</p>
-                <p class="meta">
-                  <span class="box1">
-                    <span aria-hidden="true" class="icon-link"></span>
-                  </span>
-                  SHOWstudio.com
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank">
-              <img alt="Lady Gaga iPad" src="img/screens/thumbnails/gaga_01.jpg">
-              <div class="caption">
-                <h3>
-                  Lady Gaga iPad 
-                  <small>Microsite for iPad App</small>
-                <p class="description">Front-end development of microsite for an iPad app for Lady Gaga, produced by SHOWstudio (2010).</p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="#">
-              <img src="img/screens/thumbnails/plato_01.jpg" alt="Plato's Atlantis screenshot" />
-              <div class="caption">
-                <h3>
-                  Plato&rsquo;s Atlantis
-                  <small>Microsite for Alexander McQueen&rsquo;s S/S 2010 Live Stream</small>
-                <p class="description">Front-end development of microsite for Alexander McQueen&rsquo;s S/S 2010 show, &ldquo;Plato&rsquo;s Atlantis &rdquo;, including a live stream of the catwalk show, interviews and exclusive video content.</p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="#">
-              <img alt="Product Homepage" src="img/screens/thumbnails/nails_01.jpg">
-              <div class="caption">
-                <h3>
-                  Marian Newman Nails
-                  <small>Design and development of ecommerce site</small>
-                </h3>
-                <p class="description">Design and development of ecommerce site (2010).</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <ul class="thumbnails">
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="#">
-              <img alt="Sommerset House Microsite" src="img/screens/thumbnails/sommerset_01.jpg">
-              <div class="caption">
-                <h3>Fashion Revolution at Sommerset House
-                  <small>Exhibition microsite</small>
-                <p class="description">Web development for exhibition web site at Sommerset House, London (2009).</p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="#">
-              <img src="img/screens/thumbnails/mirror_01.jpg" alt="Mirror Mirror screenshot" />
-              <div class="caption">
-                <h3>
-                  TopShop: Mirror Mirror 
-                  <small>Website for award-winning interactive installation</small>
-                <p class="description">I developed the front end of the project site for Mirror Mirror, an interactive installation by designer Ross Phillips, for SHOWstudio and TopShop. The web site provided a daily updated image gallery, capturing participants in the two-way TopShop mirror. Mirror Mirror was awarded the 2010 Design Week Award for Best Installation.</p>
-              </div>
-            </a>
-          </li>   
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="http://www.openleft.co.uk/" title="Open Left Web Site">
-              <img alt="Open Left Homepage" src="img/screens/thumbnails/openleft.png">
-              <div class="caption">
-                <h3>OpenLeft 
-                  <small>WordPress web site for Demos</small>
-                </h3>
-                <p class="description">WordPress theme development for Demos, a think-tank focused on power and politics. OpenLeft is a Demos project, and platform to explore public and expert opinions on what the &lsquo;Left&rsquo; is in contemporary UK politics (2009).</p>
-                <p class="meta">
-                    <span class="box1">
-                      <span aria-hidden="true" class="icon-link"></span>
-                    </span>
-                    Open Left
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="span3 slide">
-            <a class="thumbnail" target="_blank" href="#">
-              <img alt="Habit Industries Dashboard" src="img/screens/thumbnails/habit_01.jpg">
-              <div class="caption">
-                <h3>
-                    Habit Industries Minivid Site
-                    <small>UX Design of Moderation Dashboard</small>
-                </h3>
-                <p class="description">Usability design of Habit Industries&rsquo; Minivid dashboard, a client portal for advertisers to easily manage social video campaigns.</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+                    SHOWstudio.com
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank">
+                <img alt="Lady Gaga iPad" src="img/screens/thumbnails/gaga_01.jpg">
+                <div class="caption">
+                  <h3>
+                    Lady Gaga iPad 
+                    <small>Microsite for iPad App</small>
+                  <p class="description">Front-end development of microsite for an iPad app for Lady Gaga, produced by SHOWstudio (2010).</p>
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="#">
+                <img src="img/screens/thumbnails/plato_01.jpg" alt="Plato's Atlantis screenshot" />
+                <div class="caption">
+                  <h3>
+                    Plato&rsquo;s Atlantis
+                    <small>Microsite for Alexander McQueen&rsquo;s S/S 2010 Live Stream</small>
+                  <p class="description">Front-end development of microsite for Alexander McQueen&rsquo;s S/S 2010 show, &ldquo;Plato&rsquo;s Atlantis &rdquo;, including a live stream of the catwalk show, interviews and exclusive video content.</p>
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="#">
+                <img alt="Product Homepage" src="img/screens/thumbnails/nails_01.jpg">
+                <div class="caption">
+                  <h3>
+                    Marian Newman Nails
+                    <small>Design and development of ecommerce site</small>
+                  </h3>
+                  <p class="description">Design and development of ecommerce site (2010).</p>
+                </div>
+              </a>
+            </li>
+          
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="#">
+                <img alt="Sommerset House Microsite" src="img/screens/thumbnails/sommerset_01.jpg">
+                <div class="caption">
+                  <h3>Fashion Revolution at Sommerset House
+                    <small>Exhibition microsite</small>
+                  <p class="description">Web development for exhibition web site at Sommerset House, London (2009).</p>
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="#">
+                <img src="img/screens/thumbnails/mirror_01.jpg" alt="Mirror Mirror screenshot" />
+                <div class="caption">
+                  <h3>
+                    TopShop: Mirror Mirror 
+                    <small>Website for award-winning interactive installation</small>
+                  <p class="description">I developed the front end of the project site for Mirror Mirror, an interactive installation by designer Ross Phillips, for SHOWstudio and TopShop. The web site provided a daily updated image gallery, capturing participants in the two-way TopShop mirror. Mirror Mirror was awarded the 2010 Design Week Award for Best Installation.</p>
+                </div>
+              </a>
+            </li>   
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="http://www.openleft.co.uk/" title="Open Left Web Site">
+                <img alt="Open Left Homepage" src="img/screens/thumbnails/openleft.png">
+                <div class="caption">
+                  <h3>OpenLeft 
+                    <small>WordPress web site for Demos</small>
+                  </h3>
+                  <p class="description">WordPress theme development for Demos, a think-tank focused on power and politics. OpenLeft is a Demos project, and platform to explore public and expert opinions on what the &lsquo;Left&rsquo; is in contemporary UK politics (2009).</p>
+                  <p class="meta">
+                      <span class="box1">
+                        <span aria-hidden="true" class="icon-link"></span>
+                      </span>
+                      Open Left
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="span3 slide">
+              <a class="thumbnail" target="_blank" href="#">
+                <img alt="Habit Industries Dashboard" src="img/screens/thumbnails/habit_01.jpg">
+                <div class="caption">
+                  <h3>
+                      Habit Industries Minivid Site
+                      <small>UX Design of Moderation Dashboard</small>
+                  </h3>
+                  <p class="description">Usability design of Habit Industries&rsquo; Minivid dashboard, a client portal for advertisers to easily manage social video campaigns.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>      
       </div>
     </div>
 
@@ -249,46 +271,56 @@
             </div>
           </div>
         </div>
-        <div class="container">
-          <div id="mztek_carousel" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="active item">
-                <img src="img/mztek/clipping.jpg">
-                <div class="carousel-caption">
-                  <p>MzTEK produces series of workshops to women-only and mixed classes, teaching basic concepts to more advanced techniques.</p>
-                </div>
-              </div>
-              <div class="item">
-                <img src="img/mztek/sewing.jpg">
-                <div class="carousel-caption">
-                  <p>Participants at a soft circuit workshop sew the Lilypad Arduino microcontroller to their fabric circuits.</p>
-                </div>
-              </div>
-              <div class="item">
-                <img src="img/mztek/chitek1.jpg">
-                <div class="carousel-caption">
-                  <p>The Chi-TEK Tea Party project commissioned and publically exhibited works by women artists and technologists.</p>
-                </div>
-              </div>
-              <div class="item">
-                <img src="img/mztek/chitek2.jpg">
-                <div class="carousel-caption">
-                  <p>The artists presented their work during a "digital tea party" at London Design Week 2011, in the Victoria &amp; Albert garden.</p>
-                </div>
-              </div>
-              <div class="item">
-                <img src="img/mztek/hacked.jpg">
-                <div class="carousel-caption">
-                  <p>MzTEK teamed up with Guerilla Science in 2012 to produce Human Hacked Orchestra, a digital music &amp; soft circuit project, delivered via festivals across England.</p>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control left" href="#mztek_carousel" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#mztek_carousel" data-slide="next">&rsaquo;</a>
-          </div>
-        </div>  
-      </div>
     </div>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="mzCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/slides/clipping.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>MzTEK produces series of workshops to women-only and mixed classes, teaching basic concepts to more advanced techniques.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/sewing.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>Participants at a soft circuit workshop sew the Lilypad Arduino microcontroller to their fabric circuits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/chitek1.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>The Chi-TEK Tea Party project commissioned and publically exhibited works by women artists and technologists.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/chitek2.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>The artists presented their work during a "digital tea party" at London Design Week 2011, in the Victoria &amp; Albert garden.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/hacked.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p>MzTEK teamed up with Guerilla Science in 2012 to produce Human Hacked Orchestra, a digital music &amp; soft circuit project, delivered via festivals across England.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#mzCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#mzCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
 
     <div id="showstudio" class="row medium" style="background-color:#F6F2F5;">  
       <div class="leader">
@@ -312,59 +344,68 @@
           </div>
         </div>
       </div>
+    </div> 
 
-      <div class="container">
-        <div id="show_carousel" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="active item">
-              <img src="img/screens/showstudio_01.jpg">
-              <div class="carousel-caption">
-                <h4>SHOWstudio.com</h4>
-                <p>Helped lead a full redesign process for relaunching SHOWstudio.com, including user research, feature development, wireframing, design review &amp; development (Webby Award Winner, 2012).</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/showstudio/visions_couture.jpg">
-              <div class="carousel-caption">
-                <h4>Printemps Windows</h4>
-                <p>SHOWstudio curated department store Printemps&rsquo; windows on Boulevard Haussman, Paris. I worked on asset creation for the large interactive displays designed by Danny Brown and developed 3D interactive models of Daphne Guinness body scans for the web site.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/screens/shop_02.jpg">
-              <div class="carousel-caption">
-                <h4>Mobile gallery site</h4>
-                <p>Designed and developed a mobile app for the SHWOstudio contemporary art gallery, using QR codes to link visitors to complementary information on featured artists.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/screens/incamera_01.jpg">
-              <div class="carousel-caption">
-                <h4>Lady Gaga Live Stream</h4>
-                <p>Designed and developed a web site for popular online live stream interview with pop star Lady Gaga.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/showstudio/platosatlantis.jpg">
-              <div class="carousel-caption">
-                <h4>Alexander McQueen Live Stream</h4>
-                <p>SHOWstudio pioneered live-streaming catwalk shows with the landmark Alexander McQueen SS 2010 collection, Plato&rsquo;s Atlantis. I developed and designed the live-stream microsite.</p>
-              </div>
-            </div>
-            <div class="item">
-              <img src="img/showstudio/mirror_mirror.jpg">
-              <div class="carousel-caption">
-                <h4>Mirror, Mirror at TopShop</h4>
-                <p>TopShop and SHOWstudio collaborated on an in-store installation for the launch of their new makeup range. I developed the microsite for the installation (Best Installation Design Week Award, 2010).</p>
-              </div>
+    <div id="showCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/slides/showstudio.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h4>SHOWstudio.com</h4>
+              <p>Helped lead a full redesign process for relaunching SHOWstudio.com, including user research, feature development, wireframing, design review &amp; development (Webby Award Winner, 2012).</p>
             </div>
           </div>
-          <a class="carousel-control left" href="#show_carousel" data-slide="prev">&lsaquo;</a>
-          <a class="carousel-control right" href="#show_carousel" data-slide="next">&rsaquo;</a>
+        </div>
+        <div class="item">
+          <img src="img/slides/visions_couture.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h4>Printemps Windows</h4>
+              <p>SHOWstudio curated department store Printemps&rsquo; windows on Boulevard Haussman, Paris. I worked on asset creation for the large interactive displays designed by Danny Brown and developed 3D interactive models of Daphne Guinness body scans for the web site.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/shop.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h4>Mobile gallery site</h4>               
+              <p>Designed and developed a mobile app for the SHWOstudio contemporary art gallery, using QR codes to link visitors to complementary information on featured artists.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/incamera.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h4>Lady Gaga Live Stream</h4>
+              <p>Designed and developed a web site for popular online live stream interview with pop star Lady Gaga.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/platosatlantis.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h4>Alexander McQueen Live Stream</h4>
+                <p>SHOWstudio pioneered live-streaming catwalk shows with the landmark Alexander McQueen SS 2010 collection, Plato&rsquo;s Atlantis. I developed and designed the live-stream microsite.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/slides/mirror_mirror.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h4>Mirror, Mirror at TopShop</h4>
+              <p>TopShop and SHOWstudio collaborated on an in-store installation for the launch of their new makeup range. I developed the microsite for the installation (Best Installation Design Week Award, 2010).</p>
+            </div>
+          </div>
         </div>
       </div>
-
-    </div> 
+      <a class="left carousel-control" href="#showCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#showCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
 
     <footer id="site_footer" class="inverse">
       <div class="container">
@@ -407,11 +448,13 @@
     </footer>
     <script src="js/bootstrap.js"></script>
     <script src="js/thumbnails.js"></script>
-	<script>
+  	<script>
       $(document).ready(function(){
         $('#site_nav').scrollspy();
+        $('#showCarousel').carousel();
+        $('#mzCarousel').carousel();
       });
-     </script>
+    </script>
     <script>
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-478660-2']);
